@@ -2,6 +2,9 @@
 
 > CSV · XLSX · TXT  파일을 **Xteink X4 전용 플래시카드 EPUB**으로 변환하는 단일 HTML 도구
 
+<img width="1283" height="852" alt="Image" src="https://github.com/user-attachments/assets/8895c1fd-dafe-493f-adc5-a5c67194c42d" />
+
+
 ---
 
 ## 개요
