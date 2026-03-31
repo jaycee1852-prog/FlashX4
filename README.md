@@ -6,7 +6,7 @@ CSV / XLSX / TXT 파일을 X4에서 바로 읽을 수 있는 EPUB 또는 XTC 파
 별도 설치 없이 브라우저에서 단일 HTML 파일로 동작합니다.
 
 ![스크린샷](assets/screenshot_1.png)
-
+![스크린샷](assets/screenshot_2.png)
 ---
 
 ## 모드 구성
