@@ -1,4 +1,4 @@
-# FlashEPUB v2.0
+# FlashEPUB v2.1
 
 **Xteink X4 전용 플래시카드 생성기**
 
@@ -7,11 +7,12 @@ CSV / XLSX / TXT 파일을 X4에서 바로 읽을 수 있는 EPUB 또는 XTC 파
 
 ![스크린샷](assets/screenshot_1.png)
 ![스크린샷](assets/screenshot_2.png)
+
 ---
 
 ## 모드 구성
 
-FlashEPUB v2.0은 두 가지 모드를 제공합니다.
+FlashEPUB v2.1은 두 가지 모드를 제공합니다.
 
 ### Basic 모드 — EPUB 출력
 
@@ -141,6 +142,13 @@ Bill of Lading,선하증권,B/L,Chapter 1
 ---
 
 ## 변경 이력
+
+### v2.1
+
+- **Basic 모드 구분선 수정** — v1.x와 동일한 출력 결과로 통일 (미리보기·EPUB 모두 반영)
+- **Basic 모드 구분선 옵션 정리** — 대시(---) 옵션 제거, 점선(...)·이중선(====================) 두 가지만 유지
+- **고급 모드 챕터 TOC 수정** — 같은 카드번호의 Q면·A면·서브페이지 전체가 동일 챕터에 포함되도록 페이지 범위 계산 수정
+
 
 ### v2.0
 - **XTC 바이너리 출력** — 실제 X4 포맷으로 전면 재구현 (기존 JSON zip 방식 폐기)
