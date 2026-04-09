@@ -205,7 +205,7 @@ tr.sel td{background:rgba(124,106,247,.14);}
     <div class="logo-icon">📚</div>
     <span class="logo-text">FlashX4</span>
   </div>
-  <p class="tagline">Xteink X4 플래시카드 생성기 v2.1</p>
+  <p class="tagline">Xteink X4 플래시카드 생성기 v2.2</p>
 </header>
 
 <!-- Mode tabs -->
@@ -356,7 +356,7 @@ tr.sel td{background:rgba(124,106,247,.14);}
     <div class="css-hint">
       <b style="color:var(--text);">사용 가능한 변수</b><br>
       <span id="cssVarList" style="font-size:11px;">파일을 업로드하면 열 이름이 표시됩니다.</span><br>
-      <code>{{font1}}</code> 메인 폰트 &nbsp;·&nbsp; <code>{{font2}}</code> 보조 폰트 (CJK)
+      <code>{{font1}}</code> 메인 폰트 &nbsp;·&nbsp; <code>{{font2}}</code> 보조 폰트
     </div>
   </div>
 </div>
@@ -374,7 +374,7 @@ tr.sel td{background:rgba(124,106,247,.14);}
   <div class="font-row">
     <div class="font-drop">
       <input type="file" id="aFont2File" accept=".ttf,.otf,.woff,.woff2">
-      📁 보조 폰트 업로드 — 한자 · 일본어 · CJK 전용
+      📁 보조 폰트 업로드
     </div>
     <span class="font-badge" id="aFont2Badge" style="color:var(--muted);">없음</span>
   </div>
@@ -845,7 +845,7 @@ $('aFontFile').addEventListener('change',async e=>{
   try{
     const buf=await readBuf(file);
     const name='XFont1_'+Date.now();
-    const face=new FontFace(name,buf);
+    const face=new FontFace(name,buf.slice(0));
     await face.load();document.fonts.add(face);
     uploadedFont={name,filename:file.name,buffer:buf};
     $('aFontBadge').textContent='✓ '+file.name;
@@ -859,7 +859,7 @@ $('aFont2File').addEventListener('change',async e=>{
   try{
     const buf=await readBuf(file);
     const name='XFont2_'+Date.now();
-    const face=new FontFace(name,buf);
+    const face=new FontFace(name,buf.slice(0));
     await face.load();document.fonts.add(face);
     uploadedFont2={name,filename:file.name,buffer:buf};
     $('aFont2Badge').textContent='✓ '+file.name;
