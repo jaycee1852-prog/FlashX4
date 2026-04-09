@@ -1,4 +1,4 @@
-# FlashX4 v2.1
+# FlashX4 v2.2
 
 **Xteink X4 전용 플래시카드 생성기**
 
@@ -12,7 +12,7 @@ CSV / XLSX / TXT 파일을 X4에서 바로 읽을 수 있는 EPUB 또는 XTC 파
 
 ## 모드 구성
 
-FlashX4 v2.1은 두 가지 모드를 제공합니다.
+FlashX4는 두 가지 모드를 제공합니다.
 
 ### Basic 모드 — EPUB 출력
 
@@ -142,6 +142,11 @@ Bill of Lading,선하증권,B/L,Chapter 1
 ---
 
 ## 변경 이력
+
+### v2.2
+
+- **보조 폰트 오류 수정** 
+
 
 ### v2.1
 
